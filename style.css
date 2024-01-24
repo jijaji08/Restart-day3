@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "anurati";  
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    display: flex;
+}
+#overlay{
+    height:100%;
+    width:100%;
+    background:rgba(0, 0, 0, 0.378);
+    text-align: center;
+}
+#left{
+    height: 100%;
+    width:50%;
+    position: relative;
+    background-image:url(https://images.unsplash.com/photo-1703002918388-ee88c34cec50?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    height: 100%;
+    width:50%;
+    position: relative;
+    background-image:url(https://plus.unsplash.com/premium_photo-1700135090918-ecb43069e20b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#center1{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* background-color: yellow; */
+    color:#fff
+}
+#center2{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* background-color: yellow; */
+    color:#fff
+}
+#center1 #line,#center2 #line{
+    height: 2px;
+    width:100%;
+    background-color: #fff;
+    margin: 5px 0px 10px 0px;
+}
+#center1 button, #center2 button{
+    height:25px;
+    width:80%;
+    background:transparent;
+    border:2px solid #fff;
+    color:#fff;
+    letter-spacing: 10px;
+}
+#center1 h1, #center2 h1{
+    letter-spacing: 20px;
+}
+
+#center1 button:hover, #center2 button:hover{
+    border: solid #000;
+    background:#fff;
+    color:#000;
+}
